@@ -42,7 +42,7 @@ body{
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
 
-
+/*smartphone screen style*/
     grid-template-areas:
     "head head head head head head"
     "bar1 bar1 bar1 bar1 bar1 bar1"
@@ -91,7 +91,6 @@ body{
 }
 .bar6{
     grid-area: bar6;
-    display: none; //don't display bar6
 }
 
 .box1{
@@ -120,7 +119,7 @@ body{
 }
 
 
-/*tablet size screens*/
+/*tablet screen style*/
 /*my computer doesn't allow windows smaller than 
 500px so to view the changes I made, I changed 
 the min-width 560px instead of 500px*/
@@ -154,14 +153,10 @@ the min-width 560px instead of 500px*/
     .bar6{
        display: block;
     }
-
-    // .bar1, .bar2, .bar3, .bar4, .bar5{
-    //     justify-self: stretch;
-    // } couldn't get this to work so I displayed .bar6 instead
 }
 
 
-/*Computer Size Screens*/
+/*Computer screen style*/
     @media (min-width: 801px){
         .container{
             grid-template-areas:
